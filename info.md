@@ -8,6 +8,8 @@ You can download the graphs produced by this app with right-click and "Save Imag
 
 `Tarko, Vlad. 2018. "Calculus of Consent Shiny Applet". Available at https://tarko.shinyapps.io/calculusofconsent/`
 
+You can download the code from <https://github.com/vladtarko/calculusofconsent>.
+
 ### Basic idea
 
 Any collective decision, taken with a certain **degree of consensus**, *n*, creates some harms to those who disagree with the decision but have to obey it. These harms are known as the **external costs** of the collective decision -- in the sense that those who agree cause an externality upon those who disagree. The higher the degree of consensus, the smaller these harms are. As such, the external costs curve is declining as the level of consensus increases from 0% (dictatorship) to 100% (unanimity).
@@ -36,7 +38,7 @@ Consider first its effect upon decision costs. If the group is homogeneous, it c
 
 Consider now the influence of homogeneity upon external costs. If a group is homogeneous, there are fewer dissenters, who disagree with (and are harmed by) the group decision. This also means that, when homogeneity is larger, the external costs curve is flatter (declines slower). To understand why, suppose we gradually expand the consensus by adding random people that need to be convinced. The external costs reflect the interests of those *left out* of this consensus group. But if the population is homogeneous, the gains from adding another random person to the consensus group are relatively small because the probability of adding someone with radically different opinions/interests than the existing members of the consensus group is small. In a homogeneous society, we need to add many people to significantly reduce the harms of the collective decision making, i.e. external costs are flatter.
 
-Homogeneity does not necessarily affect decision costs and external costs at the same rate. The **homogeneity conversion factor**, *a*, is a positive scaling constant accounting for the possibly different strength with which homogeneity impacts external and decision-making costs: _g = ah_, where *h* is the effect of homogeneity upon external costs, and *g* the effect of homogeneity on decision costs. 
+Homogeneity does not necessarily affect decision costs and external costs at the same rate. The **relative effect of homogeneity on external/decision costs** accounts for the possibly different strength with which homogeneity impacts external and decision-making costs. A factor of 2 means that the external costs fall twice as fast as the decision costs as we increase the level of consensus; while a factor of 0.5 means the opposite, that the decision costs fall twice as fast as the external costs. 
 
 A very low level of consensus describes a dictatorship. The external costs at this point are the **harms of dictatorship**. Graphically, they are the starting point (on the left) of the external costs curve. Similarly, the **governing costs of dictatorship** is the level of decision costs for a dictatorship, i.e. the starting point (on the left) of the decision costs curve.
 
