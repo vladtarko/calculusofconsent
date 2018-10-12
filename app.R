@@ -16,7 +16,7 @@ ui <- dashboardPage(
                 max = 100,
                 value = 30),
     shinyWidgets::sliderTextInput("a",
-                "Relative effect of homogeneity on decision/external costs:",
+                "Relative effect of homogeneity on external/decision costs:",
                 choices = c(0.5, 0.6, 0.7, 0.8, 0.9,
                             1, 2, 3, 4, 5),
                 selected = 2),
@@ -40,12 +40,9 @@ ui <- dashboardPage(
   dashboardBody(
     tabsetPanel(type = "pills",
       tabPanel("Graph", 
-               plotOutput("calculusPlot", height = "450px"),
-               checkboxInput("aspect_ratio_check", 
-                             label = "Fixed aspect ratio",
-                             value = TRUE)),
-      tabPanel("Source code",
-               includeMarkdown("source.md"))
+               plotOutput("calculusPlot", width = "700px", height = "500px")),
+      tabPanel("Information",
+               includeMarkdown("info.md"))
     )
   )
 )
