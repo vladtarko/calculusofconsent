@@ -44,8 +44,6 @@ ui <- dashboardPage(
                checkboxInput("aspect_ratio_check", 
                              label = "Fixed aspect ratio",
                              value = TRUE)),
-      tabPanel("Information",
-               includeMarkdown("info.md")),
       tabPanel("Source code",
                includeMarkdown("source.md"))
     )
@@ -88,10 +86,6 @@ server <- function(input, output) {
                         y = input$mf, 
                         label = "Cost of market failure"), 
                     fill = "white")
-     }
-     
-     if(input$aspect_ratio_check) {
-       p <- p + coord_equal(ratio = 0.5)
      }
      
      p
