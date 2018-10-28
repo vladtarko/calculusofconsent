@@ -1,6 +1,8 @@
 ### Description
 
-This app produces an interactive version of the basic Buchanan & Tullock's *Calculus of Consent* [(1962, ch. 6)](https://www.econlib.org/library/Buchanan/buchCv3.html?chapter_num=7#book-reader) graphs, based on the formalization proposed by Tarko & O'Donnell (2018). You can use the app at <https://tarko.shinyapps.io/calculusofconsent/>.
+This app produces an interactive version of the basic Buchanan & Tullock's *Calculus of Consent* [(1962, ch. 6)](https://www.econlib.org/library/Buchanan/buchCv3.html?chapter_num=7#book-reader) graphs, based on the formalization proposed by Tarko & O'Donnell (2018). You can use the app at <https://tarko.shinyapps.io/calculusofconsent/>. Alternatively, you can run it from your computer with:
+
+```shiny::runGitHub('calculusofconsent', 'vladtarko')```
 
 ![](calculus.png)
 
